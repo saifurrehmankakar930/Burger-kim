@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- navbar-start -->
+    <navbar>
+    <div id="navbar" class="navbar">
+       <div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <select id="menu-options" style="display: none;">
+          <option>Home</option>
+          <option>About</option>
+          <option>Contact</option>
+        </select>
+        
+          
+       </div>
+       <div><h2>BURGER KING</h2></div>
+       <div style="display: flex; align-items: center; gap: 15px;">
+       <div>
+        <img style="width: 25px; height: 25px;" src="https://static-00.iconduck.com/assets.00/person-icon-239x256-0jksiav4.png" alt="">
+       </div>
+       <div class="nav-but"><button style="color: gray;"><i style="margin-right: 10px; color: gray;" class="fa-solid fa-bag-shopping"></i>View Cart</button></div>
+      </div>
+    </div>
+    <div id="navbar-3" class="navbar-1">
+        <p><i class="fa-solid fa-shop"></i>   Pick Up 106 Fulton St</p>
+        <p>7270 miles   <i class="fa-solid fa-arrow-right"></i></p>
+    </div>
+    <div class="navbar-2">
+        <button><a href="">Full Menu</a></button>
+        <button><a href="">Recent</a></button>
+        <button><a href="">Favorites</a></button>
+    </div>
+   </navbar>
+   <!-- navbar-end -->
+    <!-- container-start -->
+    <main>
+        <div class="cont">
+            <div class="cont-child">
+             <p>Breakfast Available Until 10:30 AM</p>
+            </div>
+        </div>
+        <div class="cont-1">
+            <div class="child-1" id="child-1">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/cccbb15b28a0b307fa4266c61269ef7f2c3d3f98-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Favorites</h3>
+            </div>
+            <div class="child-1" id="child-2">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/8f8e12cbed8cba3ed66b99efc67842bdb3e43f67-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Limited Time Only</h3>
+            </div>
+            <div class="child-1" id="child-3">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/46a95c6d92d1509b32ed846a5df95e6918052756-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Meals</h3>
+            </div>
+            <div class="child-1" id="child-4">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/b19ffaab4d49665afec22caea591a3ed9c751b28-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Flame Grilled Burgers</h3>
+            </div>
+            <div class="child-1" id="child-5">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/cac2d2fcfc97afc11bd9e29e4ff9cb76e678727a-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Chicken & Fish</h3>
+            </div>
+            <div class="child-1" id="child-6">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/99db23459594409e9e7b442f9858557065dcefac-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Sides</h3>
+            </div>
+            <div class="child-1" id="child-7">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/b8c565cff6b35e656b905a7c70c7f249cb05659b-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Drinks & Coffee</h3>
+            </div>
+            <div class="child-1" id="child-8">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/b8c565cff6b35e656b905a7c70c7f249cb05659b-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Sweets</h3>
+            </div>
+            <div class="child-1" id="child-9">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/b8c565cff6b35e656b905a7c70c7f249cb05659b-2666x1333.png?w=900&q=75&fit=max&auto=format" alt="">
+              <h3>Sweets</h3>
+            </div>
+        </div>
+         <div id="position" style=" height: 100px; border: 1.50px solid black; display: flex; justify-content: space-around; align-items: center;">
+            
+            <div>
+                <button style="display: flex; align-items: center; border: none; background-color: rgba(247, 243, 243, 0.30);" class="icon-button" onclick="toggleMenu()">
+                    <i style="margin-right: 6px;" class="fa-solid fa-house"></i><p>Home</p>
+                  </button>
+                  
+                  <!-- Hidden Section -->
+                  <div id="menu" style="display: none; margin-top: 20px;">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                  </div>
+                  
+                  
+            </div>
+            <div>
+                <button style="display: flex; align-items: center; border: none; background-color: rgba(247, 243, 243, 0.30);"  class="icon-button" onclick="toggleMenu()">
+                    <i style="margin-right: 7px;" class="fas fa-bars"></i><p>Menu</p>
+                  </button>
+                  
+                  <!-- Hidden Section -->
+                  <div id="menu" style="display: none; margin-top: 20px;">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                  </div>
+                  
+                  
+            </div>
+            <div>
+                <button style="display: flex; align-items: center; border: none; background-color: rgba(204, 204, 204, 0.1);"  class="icon-button" onclick="toggleMenu()">
+                    <i style="margin-right: 7px;" class="fas fa-hamburger"></i><p>Offer</p>
+                  </button>
+                  
+                  <!-- Hidden Section -->
+                  <div id="menu" style="display: none; margin-top: 20px;">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                  </div>
+                  
+                  
+            </div>
+            <div>
+                <button style="display: flex; align-items: center; border: none; background-color: rgba(247, 243, 243, 0.30);"  class="icon-button" onclick="toggleMenu()">
+                    <i style="margin-right: 7px;" class="fa-solid fa-crown"></i> <p>Rewards</p>
+                  </button>
+                  
+                  <!-- Hidden Section -->
+                  <div id="menu" style="display: none; margin-top: 20px;">
+                    <p>Menu item 1</p>
+                    <p>Menu item 2</p>
+                  </div>
+                  
+                  
+            </div>
+        </div>
+    </main>
+    <!-- container-end -->
+</body>
+</html>
